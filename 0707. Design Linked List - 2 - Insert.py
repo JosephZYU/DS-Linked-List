@@ -14,8 +14,9 @@ class linkedList:
         self.head = head
 
     def insert(self, value):
-
-        # Step 1 - create a node from the value pass in
+        """   
+        Step 1 - create a node from the value pass in
+        """
         node = linkedListNode(value)
 
         """
@@ -43,8 +44,10 @@ class linkedList:
             # Otherwise, we should continue traversing until we find the tail node
             currentNode = currentNode.nextNode
 
-    # Create print function to track the progress
     def printLinkedList(self):
+        """
+        Create print function to track the progress
+        """
         currentNode = self.head
         while currentNode is not None:
             print(currentNode.value, "-> ", end='')
